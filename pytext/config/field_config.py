@@ -60,7 +60,7 @@ class PretrainedModelEmbeddingConfig(ConfigBase):
 
 class FloatVectorConfig(ConfigBase):
     dim: int = 0  # Dimension of the vector in the dataset.
-
+    export_input_names: List[str] = ["dense_feat"]
 
 class FeatureConfig(ModuleConfig):  # type: ignore
     word_feat: WordFeatConfig = WordFeatConfig()
